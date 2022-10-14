@@ -28,8 +28,7 @@ public class ThisAndThat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        // added if to assign value to areBothCubesDetected
+        // if statement to determine value of areBothCubesDetected
         if (isRedCubeDetected && isBlueCubeDeteced) {
             areBothCubesDetected = true;
         }
@@ -42,13 +41,11 @@ public class ThisAndThat : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == blueCube)
-        {
+        if (other.gameObject == blueCube) {
            isBlueCubeDeteced = true;
         }
 
-        if (other.gameObject == redCube)
-        {
+        if (other.gameObject == redCube) {
            isRedCubeDetected = true;
         }
     }
