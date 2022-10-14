@@ -28,7 +28,7 @@ public class ThisAndThat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if statement to determine value of areBothCubesDetected
+        // if statement to determine value of areBothCubesDetected 
         if (isRedCubeDetected && isBlueCubeDeteced) {
             areBothCubesDetected = true;
         }
